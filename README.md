@@ -41,6 +41,7 @@ cd flask-sysacad
 
 pip install -r requirements.txt
 python -m pip install pandas
+pip install pytest
 
 📥 Importación de alumnos desde CSV / Student CSV Import
 

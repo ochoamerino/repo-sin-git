@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 from app.database import SessionLocal
 from app.models.alumno import Alumno
 
-# Configuración básica de logging
+# Configuración básica de logging   
 logging.basicConfig(level=logging.INFO, format="%(levelname)s - %(message)s")
 
 def importar_alumnos_csv(path_csv: str):

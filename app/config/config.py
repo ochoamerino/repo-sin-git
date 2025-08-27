@@ -6,6 +6,8 @@ import os
 basedir = os.path.abspath(Path(__file__).parents[2])
 load_dotenv(os.path.join(basedir, '.env'))
 
+
+#Funciones para desarrollo, producción, testin y configuración base 
 class Config(object):
     TESTING = False
     SQLALCHEMY_TRACK_MODIFICATIONS = False
@@ -45,3 +47,5 @@ def factory(app: str) -> Config:
     }
     
     return configuration[app]
+
+#Archivo "Entornos" eliminado, el códido se repetía sin cumplir el principio DRY. 

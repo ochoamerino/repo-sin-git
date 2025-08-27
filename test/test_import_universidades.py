@@ -3,7 +3,7 @@ import tempfile
 import pytest
 from app import create_app, db
 from app.models.universidad import Universidad
-from app.importers.universidades_importer import parse_universidades
+from app.importers.universidad_importer import parse_universidades
 from app.repositories.universidad_repositorio import insertar_o_actualizar_universidad
 
 XML_EJEMPLO = """
